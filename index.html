@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" type="text/javascript"></script>
+</head>
+<style>
+  body {
+    background-color: gray;
+    opacity: 0.5;
+    text-transform: uppercase;
+    color: black;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input {
+    width: 380px;
+    height: 30px;
+    font-size: 40px;
+  }
+</style>
+<body>
+  <header id="header" class="">
+    <p>desktop angular app</p>
+  </header><!-- /header -->
+  <section>
+    <div>
+      <label>Put your Name:</label>
+        <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <h1>Hello {{yourName}}!</h1>
+    </div>
+  </section>
+</body>
+</html>
